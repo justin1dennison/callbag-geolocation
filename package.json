@@ -1,0 +1,25 @@
+{
+  "name": "callbag-geolocation",
+  "version": "1.0.0",
+  "description": "Callbag source for geolocation coordinates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justin1dennison/callbag-geolocation.git"
+  },
+  "keywords": [
+    "callbag",
+    "source",
+    "coordinates",
+    "geolocation"
+  ],
+  "author": "Justin Dennison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justin1dennison/callbag-geolocation/issues"
+  },
+  "homepage": "https://github.com/justin1dennison/callbag-geolocation#readme"
+}
