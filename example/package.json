@@ -1,0 +1,17 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "Example of how to use the callbag-geolocation",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "private": true,
+  "author": "Justin Dennison",
+  "license": "MIT",
+  "dependencies": {
+    "callbag-basics": "^3.0.0",
+    "parcel": "^1.9.7"
+  }
+}
