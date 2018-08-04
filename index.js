@@ -1,24 +1,18 @@
 const geolocator = navigator.geolocation
 
 
-const geolocation = (interval) => {
+const geolocation = () =>  {
   let geoId
-  let coordinates = null 
   return (start, sink) => {
+    const emit = ({ coords }) => { if(coords) sink(1, coords) };
+    const onError = (error) => { throw error };
     if (start != 0) return
-    const id = setInterval(() => {
-      if(coordinates !== null) sink(1, coordinates)
-    }, interval)
-    geoId = geolocator.watchPosition(({
-      coords
-    }) => {
-      coordinates = coords
-    }, (error) => {
-      throw error
-    })
+    geoId = geolocator.watchPosition(
+   	emit,
+	onError
+    );
     sink(0, t => {
       if (t === 2) {
-        clearInterval(id)
         geolocator.clearWatch(geoId)
       }
     })
