@@ -12,6 +12,6 @@
   "license": "MIT",
   "dependencies": {
     "callbag-basics": "^3.0.0",
-    "parcel": "^1.9.7"
+    "parcel": "^2.8.2"
   }
 }
